@@ -32,9 +32,9 @@ else:
             print('You lost!')
             break
         elif num_guessed > num_to_guess:
-            num_guessed = int(input('Your guess was to high. Try again: '))
+            num_guessed = int(input(f'Your guess was to high. Try again (You have {10-i} more guesses): '))
         elif num_guessed < num_to_guess:
-            num_guessed = int(input('Your guess was to Low. Try again: '))
+            num_guessed = int(input(f'Your guess was to Low. Try again (You have {10-i} more guesses): '))
         elif num_guessed == num_to_guess:
             print ('You guessed right!')
             break    
