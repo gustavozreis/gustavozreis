@@ -1,0 +1,37 @@
+escolha_da_funcao = input('Qual função você quer usar?').capitalize()
+
+if escolha_da_funcao == 'Conversor':
+
+#código conversor de temperatura
+
+    def conversor(temperatura):
+        resultado_temperatura = (temperatura * 9 / 5) + 32 
+        print(f'A temperatura em F é {resultado_temperatura}')
+
+    insira_temperatura=int(input('Insira e temperatura em C: '))
+    conversor(insira_temperatura)
+    
+
+#código da calculadora
+elif escolha_da_funcao == 'Calculadora':
+             
+    def calculadora (primeiro_numero,operacao,segundo_numero):
+        if operacao == '+':
+            print (f'O resultado é {primeiro_numero + segundo_numero}')
+        elif operacao == '-':
+            print (f'O resultado é {primeiro_numero - segundo_numero}')
+        elif operacao == '*':
+            print (f'O resultado é {primeiro_numero * segundo_numero}')
+        elif operacao == '/':
+            print (f'O resultado é {primeiro_numero / segundo_numero}')    
+        else:
+            print (f'Operação não suportada, tente novamente!')
+
+    numero_1 = int(input('Insira o primeiro número: '))
+    operation = input('Insira a operação: ')
+    numero_2 = int(input('Insira o segundo número: '))
+
+    calculadora(numero_1,operation,numero_2)
+    
+else:
+    print('Método não suportado.')
