@@ -21,21 +21,22 @@ num_to_guess = random.randint(1,100)
 
 num_guessed = int(input('Guess the number (you have 10 chances): '))
 
-if num_guessed == num_to_guess:
-    print('You guessed right!')
-else:
-
-    i=0
-    while i<=10:
-        i+=1
-        if i==10:
-            print('You lost!')
-            break
-        elif num_guessed > num_to_guess:
-            num_guessed = int(input(f'Your guess was to high. Try again (You have {10-i} more guesses): '))
+i=0
+while i<=10:
+    i+=1
+    if i==10:
+        print(f'You lost! The correct number was {num_to_guess}')
+        break
+    elif i==9:
+        if num_guessed > num_to_guess:
+            num_guessed = int(input(f'Your guess was to high. Try again ({10-i} try left): '))
         elif num_guessed < num_to_guess:
-            num_guessed = int(input(f'Your guess was to Low. Try again (You have {10-i} more guesses): '))
-        elif num_guessed == num_to_guess:
-            print ('You guessed right!')
-            break    
+            num_guessed = int(input(f'Your guess was to Low. Try again ({10-i} try left): '))
+    elif num_guessed > num_to_guess:
+        num_guessed = int(input(f'Your guess was to high. Try again ({10-i} tries left): '))
+    elif num_guessed < num_to_guess:
+        num_guessed = int(input(f'Your guess was to Low. Try again ({10-i} tries left): '))
+    elif num_guessed == num_to_guess:
+        print ('You guessed right!')
+        break    
         
