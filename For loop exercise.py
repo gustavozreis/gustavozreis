@@ -16,10 +16,6 @@ names2 = [input('First name'), input('Second Name')]
 names_total = names + names1 + names2
 
 for nome in names_total:
-    print(f'{nome.capitalize()}! You are invited to the party on saturday.')
+    print(f'{nome.title()} ! You are invited to the party on saturday.')
 
 print('End of guests.')
-
-
-
- 
