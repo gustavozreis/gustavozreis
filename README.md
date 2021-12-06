@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @reizudo
-- 🌱 I’m currently learning to become a Android Developer
+- 🌱 I’m currently learning to become an Android Developer
 
 
 <!---
