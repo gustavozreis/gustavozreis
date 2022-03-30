@@ -26,3 +26,4 @@ Já sei fazer:
 Correndo atrás de aprender para o projeto pessoal em andamento:
 - Permissões durante run time
 - Firebase
+- Notificações
